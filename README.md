@@ -1,5 +1,7 @@
 # Lataustyökalu viestintäviraston Verkkotietopiste -palvelun rajapintaan
 
+https://verkkotietopiste.fi/
+
 ## Ominaisuudet
 1. Työkalu lukee GML-tiedostosta tai WFS-rajapinnasta rakentamishankkeet ja lähettää ne verkkotietopisteeseen.
 2. Se tarkistaa ovatko tiedot päivittyneet ja lähettää vain muuttuneet tiedot.

@@ -1,6 +1,6 @@
 # Lataustyökalu viestintäviraston Verkkotietopiste -palvelun rajapintaan
 
-https://verkkotietopiste.fi/
+Lue rajapintaan liittyvät ohjeet Verkkotietopisteen verkkosivulta: https://verkkotietopiste.fi/
 
 ## Ominaisuudet
 1. Työkalu lukee GML-tiedostosta tai WFS-rajapinnasta rakentamishankkeet ja lähettää ne verkkotietopisteeseen.
@@ -29,4 +29,4 @@ Esimerkiksi siis `node app.js --testapi --dryrun` kertoo sinulle, millaisia muut
 Projektin info ja error -tasojen lokitus ilmestyy työkalua ajettaessa konsoliin. Näiden lisäksi debug-tason yksityiskohtaisempi lokitieto löytyy kansiosta ./log/, johon lokitiedostot ilmestyvät tiedostoon {vuosi}-{kuukausi}-{päivä}-{tiedostonimi_konfiguraatiossa}.log.
 
 #### Muuta
-Työkalun on tehnyt ja sitä käyttää Espoon kaupunki.
+Työkalun on teettänyt ja sitä käyttää Espoon kaupungin kaupunkitekniikankeskus.

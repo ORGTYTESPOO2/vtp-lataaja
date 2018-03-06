@@ -1,0 +1,66 @@
+{
+  "testapi": {
+    "translations": {
+      "gmlFields": {
+        "HjaTilaus":"externalId",
+        "TSNimi":"name",
+        "AlkuPVM":"startDate",
+        "LoppuPVM":"endDate",
+        "OmistajaSahkoposti":"email",
+		"Kuvaus": "freeText"
+      },
+      "staticFields": {
+        "Liikenne":"networkType",
+        "Alustava": "readinessLevel",
+        "True": "plan"
+      }
+    },
+    "parameters": {
+      "target":"https://testapi.verkkotietopiste.fi/api/external/",
+      "rsakey":"XXXX_rsa_testi.pem",
+      "gmlsource":"demo.gml",
+      "gmlns":"teke",
+      "logfile":"vtp-test.log",
+      "iss":"espoonkaupunki.XXXX",
+      "sub":"espoonkaupunki.XXXX",
+      "aud":"XXX-XXX-XXX-XXX",
+      "organizationName":"Espoon kaupunki",
+      "searchStartDate":"2016-01-30",
+      "searchEndDate":"2020-01-30",
+	  "searchArea":"{ \"type\": \"Polygon\", \"coordinates\": [[[358218,6693373],[367050,6662780],[383018,6665052],[378154,6695644]]]}",
+      "searchResultGMLFile":"verkkotietopiste-test.gml"
+    }
+  },
+  "api": {
+   "translations": {
+      "gmlFields": {
+        "HjaTilaus":"externalId",
+        "TSNimi":"name",
+        "AlkuPVM":"startDate",
+        "LoppuPVM":"endDate",
+        "OmistajaSahkoposti":"email",
+		"Kuvaus": "freeText"
+      },
+      "staticFields": {
+        "Liikenne":"networkType",
+        "Alustava": "readinessLevel",
+        "True": "plan"
+      }
+    },
+    "parameters": {
+      "target":"https://api.verkkotietopiste.fi/api/external/",
+      "rsakey":"XXXX_rsa.pem",
+       "gmlsource":"http://sv-h-t-kupro-01:8888/geoserver/teke/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=teke:Toimintasuunnitelma_SiirtoVerkkotietopiste&maxFeatures=500&outputFormat=GML2",
+      "gmlns":"teke",
+      "logfile":"vtp-prod.log",
+      "iss":"espoonkaupunki.XXX",
+      "sub":"espoonkaupunki.XXX",
+      "aud":"XXXX-XXX-XXX-XXX-XXX",
+      "organizationName":"Tekninen ja ympäristötoimi",
+      "searchStartDate":"2017-01-30",
+      "searchEndDate":"2018-01-30",
+	  "searchArea":"{ \"type\": \"Polygon\", \"coordinates\": [[[358218,6693373],[367050,6662780],[383018,6665052],[378154,6695644]]]}",
+      "searchResultGMLFile":"verkkotietopiste-prod.gml"
+    }
+  }
+}

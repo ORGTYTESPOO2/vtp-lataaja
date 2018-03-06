@@ -1,0 +1,24 @@
+{
+  "name": "espoo-vtp-lataaja",
+  "version": "1.0.0",
+  "description": "Lataustyökalu Verkkotietopiste.fi -palvelun rajapintaan",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node --plugins transform-es2015-modules-commonjs app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.siilicloud.com:olli.kontkanen/espoo-vtp-lataaja.git"
+  },
+  "author": "Siili Solutions Oyj",
+  "dependencies": {
+    "geojson-precision": "^0.4.0",
+    "jsonwebtoken": "^8.1.0",
+    "lodash": "^4.17.4",
+    "ogr2ogr": "^1.2.1",
+    "ol": "^4.5.0",
+    "request": "^2.83.0",
+    "winston": "^2.4.0",
+    "yargs": "^10.0.3"
+  }
+}

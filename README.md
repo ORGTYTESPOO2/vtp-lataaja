@@ -2,14 +2,15 @@
 
 ## Ominaisuudet
 1. Työkalu lukee GML-tiedostosta tai WFS-rajapinnasta rakentamishankkeet ja lähettää ne verkkotietopisteeseen.
-1.1. Se tarkistaa ovatko tiedot päivittyneet ja lähettää vain muuttuneet tiedot.
-1.2. Työkalussa on kuiva-ajotoiminto, jolla pystyy testaamaan, että aineisto on kunnossa ennen kuin sen ottaa tuotantokäyttöön.
-2. Se lukee verkkotietopisteestä rajatulla alueella olevat muiden rakentamishankkeet ja tallentaa ne GML-tiedostoon.
+2. Se tarkistaa ovatko tiedot päivittyneet ja lähettää vain muuttuneet tiedot.
+3.  Työkalussa on kuiva-ajotoiminto, jolla pystyy testaamaan, että aineisto on kunnossa ennen kuin sen ottaa tuotantokäyttöön.
+4. Se lukee verkkotietopisteestä rajatulla alueella olevat muiden rakentamishankkeet ja tallentaa ne GML-tiedostoon.
 
 ### Edellytykset
 1. Lataa itsellesi node.js:n LTS-versio 8.9.1 osoitteesta https://nodejs.org/en/ . Komennon `node -v` pitäisi nyt näyttää konsolissa oikea versio. 
 2. Lataa ogr2ogr -komentorivityökalu kera GDALin osoitteesta https://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries . `ogr2ogr --version` vastannee nyt myös oikealla versiolla. Projekti on tehty ogr2ogrilla joka viittaa GDALin versioon 1.11.5.
 3. Aja Noden mukana tulleen paketinhallintaohjelman komento `npm install` työkalun juurikansiosta, projektin sisäisten riippuvuuksien asennukseen.
+4. Pääkäyttäjän tulee olla tunnistautunut verkkotietopisteeseen.
 
 ### Konfigurointi
 Config-kansiossa olevaan config.json-tiedostoon pitää määritellä organisaatiolle sopivat asetukset.

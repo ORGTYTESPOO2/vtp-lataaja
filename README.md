@@ -1,14 +1,20 @@
-#Lataustyökalu Verkkotietopiste -palvelun rajapintaan
+# Lataustyökalu Verkkotietopiste -palvelun rajapintaan
 
-###Edellytykset
+## Ominaisuudet
+1. Työkalu lukee GML-tiedostosta tai WFS-rajapinnasta rakentamishankkeet ja lähettää ne verkkotietopisteeseen.
+1.1. Se tarkistaa ovatko tiedot päivittyneet ja lähettää vain muuttuneet tiedot.
+1.2. Työkalussa on kuiva-ajotoiminto, jolla pystyy testaamaan, että aineisto on kunnossa ennen kuin sen ottaa tuotantokäyttöön.
+2. Se lukee verkkotietopisteestä rajatulla alueella olevat muiden rakentamishankkeet ja tallentaa ne GML-tiedostoon.
+
+### Edellytykset
 1. Lataa itsellesi node.js:n LTS-versio 8.9.1 osoitteesta https://nodejs.org/en/ . Komennon `node -v` pitäisi nyt näyttää konsolissa oikea versio. 
 2. Lataa ogr2ogr -komentorivityökalu kera GDALin osoitteesta https://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries . `ogr2ogr --version` vastannee nyt myös oikealla versiolla. Projekti on tehty ogr2ogrilla joka viittaa GDALin versioon 1.11.5.
 3. Aja Noden mukana tulleen paketinhallintaohjelman komento `npm install` työkalun juurikansiosta, projektin sisäisten riippuvuuksien asennukseen.
 
-###Konfigurointi
+### Konfigurointi
 Config-kansiossa olevaan config.json-tiedostoon pitää määritellä organisaatiolle sopivat asetukset.
 
-###Käyttö
+### Käyttö
 Työkalu ajetaan komennolla `node app.js` työkalun juurikansiosta. Käytön tarkempi määrittely tehdään seuraavilla valitsimilla:
 1. `--api` // `--testapi`: pakollinen määrittely (joko-tai) sille, ottaako työkalu konfiguraatioidensa arvot Verkkotietopisteen testi- vai tuotantopalvelimelle osoitettuna
 2. `--deleteall`: Työkalu poistaa kaikki Verkkotietopisteen rajapinnasta löytyvät verkot, muttei lisää mitään uutta.

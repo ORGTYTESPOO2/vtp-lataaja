@@ -22,7 +22,7 @@ Työkalu ajetaan komennolla `node app.js` työkalun juurikansiosta. Käytön tar
 1. `--api` // `--testapi`: pakollinen määrittely (joko-tai) sille, ottaako työkalu konfiguraatioidensa arvot Verkkotietopisteen testi- vai tuotantopalvelimelle osoitettuna
 2. `--deleteall`: Työkalu poistaa kaikki Verkkotietopisteen rajapinnasta löytyvät verkot, muttei lisää mitään uutta.
 3. `--dryrun`: Kuiva-ajovalitsin, jolla työkalu selvittää, millaisia muutoksia ajaisi kohderajapintaan, mutta ei aja sinne mitään muutoksia.
-4. `--search`: Hakuvalitsin, joka lataa konfiguraation mukaisen shapefilen hakualueensa määrittelyksi. Hakutulokset kirjoitetaan kansioon ./gml/ päivättynä ja tuotanto- ja testipalvelimen mukaan eriteltynä. Mikäli saman päivän aikana tehdään useampia hakuja, uudet tulosGML:t nimetään etenevässä sekvenssissä {pohjatiedosto}.{1:stä alkava numero}. Ei huomioi valitsinta `--dryrun`.  
+4. `--search`: Hakuvalitsin, joka lataa konfiguraation mukaisen hakualueensa määrittelyksi. Hakutulokset kirjoitetaan kansioon ./gml/ päivättynä ja tuotanto- ja testipalvelimen mukaan eriteltynä. Mikäli saman päivän aikana tehdään useampia hakuja, uudet tulosGML:t nimetään etenevässä sekvenssissä {pohjatiedosto}.{1:stä alkava numero}. Ei huomioi valitsinta `--dryrun`.  
 
 Esimerkiksi siis `node app.js --testapi --dryrun` kertoo sinulle, millaisia muutoksia lähteenä käytetystä GML:stä olisi testipalvelimen rajapintaan tapahtumassa, jonka jälkeen `node app.js --testapi` ajaa samaiset muutokset. 
 
